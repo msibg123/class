@@ -1,0 +1,127 @@
+<html>
+<head>
+	<link rel="stylesheet" href="Calculator.css">
+</head>
+<script>
+   var cur_num ="";
+  function one(){
+  	cur_num=cur_num+"1";
+     output.value=cur_num;
+    return cur_num;
+  }  
+  function two(){
+  	cur_num=cur_num+"2";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+   function three(){
+  	cur_num=cur_num+"3";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+    function four(){
+  	cur_num=cur_num+"4";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+    function five(){
+  	cur_num=cur_num+"5";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+    function six(){
+  	cur_num=cur_num+"6";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+    function seven(){
+  	cur_num=cur_num+"7";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+    function eight(){
+  	cur_num=cur_num+"8";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+    function nine(){
+  	cur_num=cur_num+"9";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+       function point(){
+  	cur_num=cur_num+".";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+    function plus(){
+  	cur_num=cur_num+"+";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+    function min(){
+  	cur_num=cur_num+"-";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+    function mul(){
+  	cur_num=cur_num+"*";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+    function div(){
+  	cur_num=cur_num+"/";
+     output.value=cur_num;
+    return cur_num;
+  }
+
+  function equal(){
+  	output.value=eval(cur_num);
+  	cur_num=eval(cur_num);
+  	return cur_num;
+  }
+
+
+  function clean(){
+    output.value="0";
+    cur_num="";
+    return cur_num;
+  }
+</script>
+<body>
+	  <center>
+	  <table id='tbl'>
+      <caption><input id="output" value="0"  type="text" text-align = right;></input></caption></br></br>
+      <tr><td><button onclick='one()'>1</button></td>
+      <td><button onclick='two()'>2</button></td>
+      <td><button onclick='three()'>3</button></td>
+      <td><button onclick='plus()'>+</button></td>
+      <tr><td><button onclick='four()'>4</button></td>
+      <td><button onclick='five()'>5</button></td>
+      <td><button onclick='six()'>6</button></td>
+      <td><button onclick='min()'>-</button></td>
+      <tr><td><button onclick='seven()'>7</button></td>
+      <td><button onclick='eight()'>8</button></td>
+      <td><button onclick='nine()'>9</button></td>
+      <td><button onclick='mul()'>*</button></td>
+      <tr><td><button onclick='zero()'>0</button></td>
+      <td><button onclick='point()'>.</button></td>
+      <td><button onclick='equal()'>=</buttom></td>
+      <td><button onclick='div()'>/</button></td>
+      <tr><td><button onclick='clean()'>c</buttom></td>
+  </table>
+  </center>
+</body>
+</html>

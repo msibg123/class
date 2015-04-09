@@ -28,6 +28,8 @@ class CoursesController < ApplicationController
 
     else
     	render :new
+
+    	
     	
     end
 	end
